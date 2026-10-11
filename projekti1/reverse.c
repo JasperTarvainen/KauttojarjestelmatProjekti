@@ -22,6 +22,13 @@ int main(int argc, char *argv[])
         exit(1);
     };
 
+    /*Tarkistetaan että syöte ja tuloste ovat eri tiedostoja*/
+    if (argc == 3 && strcmp(argv[1], argv[2]) == 0)
+    {
+        fprintf(stderr, "Input and Output file must differ\n");
+        exit(1);
+    }
+
     /*Ensimmäinen on luettava ja toinen palautettava + virheen tarkistus*/
     if (argc >= 2)
         input = fopen(argv[1], "r");
