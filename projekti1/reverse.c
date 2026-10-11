@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*Linkitetyn listan rakenteeseen on hyödynnetty seuraavia lähteitä: https://www.geeksforgeeks.org/c/linked-list-in-c/, https://stackoverflow.com/questions/48867958/correctly-implementing-a-linked-list-in-c?rq=3*/
+
 struct solmu
 {
     char *rivi;
