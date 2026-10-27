@@ -9,7 +9,7 @@ static void write(int count, int c)
 {
     char ch = (char)c;
     fwrite(&count, sizeof(int), 1, stdout);
-    fwrite(&ch, sizeof(int), 1, stdout);
+    fwrite(&ch, sizeof(char), 1, stdout);
 }
 
 int main(int argc, char *argv[])
